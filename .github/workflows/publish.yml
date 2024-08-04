@@ -17,5 +17,5 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: jwoglom/palm2000-dev-docker
+          repository: jwoglom/palm2000-dev-docker/palm2000-dev-docker
           tag_with_ref: true
