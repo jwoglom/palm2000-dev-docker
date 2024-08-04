@@ -1,0 +1,21 @@
+DEV ENVIRONMENT ORIGINAL AUTHOR: palm2000.com
+
+14.06.2020
+
+
+
+==== Building an Compiling a Palm OS application ====
+
+Just run "make" in a terminal to generate a executable ".prc" file.
+
+The source code can be found in "Src/"
+
+
+
+==== POSE ====
+
+In order to be able to use POSE, the deb-package "libxext6:i386" is needed. This an be installed with:
+
+sudo apt-get install libxext6:i386
+
+After the installation of this package, POSE can be started with "./startPose.sh".
