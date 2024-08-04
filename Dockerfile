@@ -8,8 +8,12 @@ RUN wget https://palm2000.com/storage/files/17-file-palmdev_V3.zip -O /17-file-p
 RUN unzip /17-file-palmdev_V3.zip -d /
 RUN rm -f /palmdev_V3/src/helloWorld.rcp
 RUN rm -f /palmdev_V3/src/helloWorld.c
-ADD replace/Makefile /palmdev_V3/Makefile
+ADD Makefile /palmdev_V3/Makefile
 RUN rm /17-file-palmdev_V3.zip
+
+RUN mkdir -p /rom
+RUN wget -c https://palmdb.net/content/files/archive-rom/palm-roms-complete/Palm-m515-4.1-en.rom -O /rom/Palm-m515-4.1-en.rom
+
 
 WORKDIR /palmdev_V3
 ENTRYPOINT ["/bin/bash"]
